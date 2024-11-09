@@ -1,7 +1,7 @@
 async function fetchRSSFeed() {
   try {
     const rssUrl = 'your_bluesky_feed-url'; // Replace with your RSS feed URL
-    const proxyUrl = `https://a.proxy.url/rss-proxy?url=${encodeURIComponent(rssUrl)}`; // Insert proxy URL if receiving CORS errors, or remove it
+    const proxyUrl = `https://a.proxy.url/rss-proxy?url=${encodeURIComponent(rssUrl)}`; // Insert proxy URL if receiving CORS errors, or remove the proxy functions
     console.log(`Fetching RSS feed from: ${proxyUrl}`);
     const response = await fetch(proxyUrl);
     if (!response.ok) {
